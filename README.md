@@ -6,6 +6,8 @@ This is a preview of how to build an app using Angular 2.0. Nothing in here is g
 
 The application structure for this project was brought on from `ng2do`. [Click here](https://github.com/davideast/ng2do) to see the original project.
 
+A Special thanks to David East for putting together that project.
+
 ### Installation
 
 ```bash
