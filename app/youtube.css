@@ -1,0 +1,75 @@
+body, input, select, option, pre, h1,h2,h3,h4,h5,h6 {
+  font-family: "Lucida Grande";
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
+  padding:0;
+}
+
+.video-listings {
+  display:flex;
+  flex-flow:row wrap;
+}
+
+img {
+  max-width: initial;
+}
+
+.video-listings > .listing {
+  margin-bottom:-2px;
+  min-width:250px;
+  overflow:hidden;
+  flex:1;
+  border:3px solid #222;
+  background:black;
+}
+
+.video-listings > .listing img {
+  width:140%;
+  margin-top:-20%;
+  margin-left:-20%;
+}
+
+.search-bar {
+  width:100%;
+  padding:10px;
+  font-size:25px;
+  line-height:25px;
+  border:5px solid black;
+  box-sizing:border-box;
+}
+
+.preview-video {
+  background:black;
+  text-align:center;
+  min-height:500px;
+}
+
+.preview-video iframe {
+  border:0;
+  margin:40px;
+}
+
+.youtube-app {
+  position:relative;
+}
+
+.preview-video header {
+  position:relative;
+  color:white;
+  text-align:left;
+  background:#333;
+  padding:20px;
+}
+
+.preview-video header > .heading {
+  font-size:25px;
+  color:white;
+}
+
+.preview-video header > .actions {
+  position:absolute;
+  top:20px;
+  right:20px;
+}

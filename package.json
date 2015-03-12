@@ -1,0 +1,32 @@
+{
+  "name": "ng2tube",
+  "version": "0.0.1",
+  "description": "An example app for Angular 2 Alpha. Not a showcase of best practices.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yearofmoo/ng2tube.git"
+  },
+  "keywords": [
+    "Angular",
+    "2",
+    "Firebase",
+    "Angular",
+    "Angularjs"
+  ],
+  "author": "David East",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/yearofmoo/ng2tube/issues"
+  },
+  "homepage": "https://github.com/yearofmoo/ng2tube",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-shell": "^0.3.0"
+  }
+}

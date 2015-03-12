@@ -1,0 +1,37 @@
+<style>@import "lib/gumby.css"</style>
+<style>@import "app/youtube.css"</style>
+
+<div class="youtube-app">
+  <div class="search-header">
+    <input #searcher
+           placeholder="Search for a video..."
+           type="text"
+           class="search-bar"
+           (input)="search(searcher.value)" />
+  </div>
+
+  <div *if="previewVideo" class="preview-video">
+    <header>
+      <h2 class="heading">{{ previewVideo.title }}</h2>
+
+      <nav class="actions">
+        <span class="btn medium danger">
+          <button (click)="hideVideo()">Hide Video</button>
+        </span>
+
+        <a target="_blank" [href]="previewVideo.url" class="btn medium default">
+          <button (click)="hideVideo()">View Youtube Page</button>
+        </a>
+      </nav>
+    </header>
+    <iframe [src]="previewVideo.embedUrl"
+            [width]="previewVideo.width"
+            [height]="previewVideo.height"></iframe>
+  </div>
+
+  <div class="video-listings">
+    <div *foreach="#result in results" class="listing">
+      <img [src]="result.posterUrl" (click)="preview(result)"  />
+    </div>
+  </div>
+</div>

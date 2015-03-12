@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>ngTube 2.0</title>
+  <link rel="stylesheet" href="./index.css" type="text/css" />
+</head>
+<body>
+  <youtube-app>Loading...</youtube-app>
+
+  <script src="/quickstart/dist/es6-shim.js"></script>
+  <script>
+    System.paths = {
+      'angular2/*':'quickstart/angular2/*.js', // Angular
+      'rtts_assert/*': 'quickstart/rtts_assert/*.js', //Runtime assertions
+      'youtube': 'app/youtube.js',
+      'deps/*': 'deps/*.js'
+    };
+
+    System.import('youtube').then(function(module) {
+      module.main();
+    }, console.log.bind(console));
+  </script>
+  </body>
+</html>
