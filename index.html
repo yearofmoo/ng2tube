@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>ngTube 2.0</title>
-  <link rel="stylesheet" href="./index.css" type="text/css" />
+  <link rel="stylesheet" href="./css/core.css" type="text/css" />
 </head>
 <body>
   <youtube-app>Loading...</youtube-app>
@@ -13,7 +13,7 @@
       'angular2/*':'quickstart/angular2/*.js', // Angular
       'rtts_assert/*': 'quickstart/rtts_assert/*.js', //Runtime assertions
       'youtube': 'app/youtube.js',
-      'deps/*': 'deps/*.js'
+      'lib/*': 'app/lib/*.js'
     };
 
     System.import('youtube').then(function(module) {

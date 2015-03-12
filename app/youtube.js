@@ -1,6 +1,5 @@
 import {Component, If, Template, bootstrap, Foreach} from 'angular2/angular2';
-import {bind} from 'angular2/di';
-import {YouTubeApi} from 'deps/YouTubeApi';
+import {YouTubeApi} from 'lib/YouTubeApi';
 
 @Component({
   selector: 'youtube-app',
